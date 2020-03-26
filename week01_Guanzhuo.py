@@ -33,32 +33,35 @@ def update_data(ls, prices, window=20):
 
     p=[trader.get_last_price(sym) for sym in ls ]
     prices.loc[trader.get_last_trade_time(),:] = p
-    if len(prices)>window:
-        prices = prices.iloc[1:,:]
+    # if len(prices)>window:
+    #     prices = prices.iloc[1:,:]
     return prices
 
+def macd(close,period=(12,26,9)):
+    diff = close.ewm(span=period[0]).mean()-close.ewm(span=period[1]).mean()
+    dea = diff.ewm(span=period[2]).mean()
+    res = diff-dea
+    res.columns = ["macd"]
+    return res
 
 if __name__== "__main__":
 
     trader = subscribe()
     ls =  trader.get_stock_list()
     prices = pd.DataFrame(columns=ls)
-    ma_window_short = 10
-    ma_window_long = 30
-    ma_table = pd.DataFrame(columns=ls)
+    #ma_table = pd.DataFrame(columns=ls)
     count = 0
     while True:
-        if prices.shape[0]<ma_window_long:
-            prices = update_data(ls,prices,40)
-            print(f"prices are: {prices.iloc[-1, :]}")
-            print("=" * 100)
-            print(f"p&l is {trader.get_portfolio_summary().get_total_realized_pl()}")
-            time.sleep(10)
-            continue
+        # if prices.shape[0]<ma_window_long:
+        #     prices = update_data(ls,prices,40)
+        #     print(f"prices are: {prices.iloc[-1, :]}")
+        #     print("=" * 100)
+        #     print(f"p&l is {trader.get_portfolio_summary().get_total_realized_pl()}")
+        #     time.sleep(60)
+        #     continue
         prices = update_data(ls, prices,40)
-        ma_table_5 = prices.apply(lambda x: x.rolling(ma_window_short).mean(),axis=0)
-        ma_table_10 = prices.apply(lambda x: x.rolling(ma_window_long).mean(),axis=0)
-        latest_diff = ma_table_5.iloc[-1,:]-ma_table_10.iloc[-1,:]
+        macd_table = prices.apply(macd,axis=0)
+        latest_diff = macd_table.iloc[-1,:]
         for symbol,diff in latest_diff.items():
             if diff >= 0 and trader.get_portfolio_item(symbol).get_long_shares()==0:
                 while trader.get_portfolio_item(symbol).get_long_shares()!=100:
