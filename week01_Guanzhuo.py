@@ -63,16 +63,16 @@ if __name__== "__main__":
         macd_table = prices.apply(macd,axis=0)
         latest_diff = macd_table.iloc[-1,:]
         for symbol,diff in latest_diff.items():
-            if diff >= 0 and trader.get_portfolio_item(symbol).get_long_shares()==0:
-                while trader.get_portfolio_item(symbol).get_long_shares()!=100:
-                    print(f"now buy{symbol}")
-                    market_order(trader, "buy", symbol, contract_size=1)
-                    time.sleep(0.5)
-            elif diff < 0 and trader.get_portfolio_item(symbol).get_short_shares()==0:
-                while trader.get_portfolio_item(symbol).get_short_shares()!=100:
-                    print(f"now sell{symbol}")
-                    market_order(trader, "sell", symbol, contract_size=1)
-                    time.sleep(0.5)
+            if diff >= 0 and trader.get_portfolio_item(symbol).get_long_shares()!=100:
+                size = int((trader.get_portfolio_item(symbol).get_short_shares()+(100-trader.get_portfolio_item(symbol).get_long_shares()))/100)
+                print(f"now buy{symbol}, amount{size}")
+                market_order(trader, "buy", symbol, contract_size=size)
+                time.sleep(0.5)
+            elif diff < 0 and trader.get_portfolio_item(symbol).get_short_shares()!=100:
+                size = int((trader.get_portfolio_item(symbol).get_long_shares()+(100-trader.get_portfolio_item(symbol).get_short_shares()))/100)
+                print(f"now sell{symbol}, amount{size}")
+                market_order(trader, "sell", symbol, contract_size=size)
+                time.sleep(0.5)
             else:
                 pass
         print(f"prices are: {prices.iloc[-1,:]}")
