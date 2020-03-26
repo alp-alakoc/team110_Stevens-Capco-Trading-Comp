@@ -265,11 +265,11 @@ def demo_10(trader: shift.Trader):
 
 def main(argv):
     # create trader object
-    trader = shift.Trader("team-110")
+    trader = shift.Trader("test001")
 
     # connect and subscribe to all available order books
     try:
-        trader.connect("initiator.cfg", "t7TAFYjhbpN2qSsV")
+        trader.connect("initiator.cfg", "password")
         trader.sub_all_order_book()
     except shift.IncorrectPasswordError as e:
         print(e)
