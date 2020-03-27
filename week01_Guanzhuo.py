@@ -6,7 +6,7 @@ import shift
 import datetime
 
 def subscribe():
-    trader = shift.Trader("test001")
+    trader = shift.Trader("test002")
 
     # connect and subscribe to all available order books
     try:
@@ -39,8 +39,8 @@ def update_data(ls, prices, window=20):
     return prices
 
 def macd(close,period=(12,26,9)):
-    diff = close.ewm(span=period[0]).mean()-close.ewm(span=period[1]).mean()
-    dea = diff.ewm(span=period[2]).mean()
+    diff = close.rolling(period[0]).mean()-close.rolling(period[1]).mean()
+    dea = diff.rolling(period[2]).mean()
     res = diff-dea
     res.columns = ["macd"]
     return res
@@ -52,8 +52,16 @@ if __name__== "__main__":
     prices = pd.DataFrame(columns=ls)
     #ma_table = pd.DataFrame(columns=ls)
     count = 0
+    count_while = 0
     while True:
-        prices = update_data(ls, prices,40)
+        print(f"the {count_while} loop")
+        if count_while==0:
+            for _ in range(30):
+                prices = update_data(ls, prices,40)
+                print("pre loop")
+                time.sleep(20)
+        count_while+=1
+        prices = update_data(ls, prices, 40)
         macd_table = prices.apply(macd,axis=0)
         latest_diff = macd_table.iloc[-1,:]
         for symbol,diff in latest_diff.items():
@@ -74,17 +82,20 @@ if __name__== "__main__":
         print(f"prices are: {prices.iloc[-1,:]}")
         print("="*100)
         print(f"p&l is {trader.get_portfolio_summary().get_total_realized_pl()}")
-        time.sleep(60)
+        time.sleep(20)
         if prices.index[-1].time()>= datetime.time(hour=15,minute=30,second=0):
             if count<40:
                 for _ in range(40-count):
+                    print(f"buy VIXY")
                     market_order(trader, "buy", "VIXY", contract_size=5)
                     time.sleep(90)
             for item in trader.get_portfolio_items().values():
                 if item.get_shares()<0:
-                    market_order(trader, "buy", item.get_symbol(), contract_size=int(item.get_shares()/100))
+                    print(f"buy {item.get_symbol()}")
+                    market_order(trader, "buy", item.get_symbol(), contract_size=int(abs(item.get_shares())/100))
                 if item.get_shares()>0:
-                    market_order(trader, "sell", item.get_symbol(), contract_size=int(item.get_shares()/100))
+                    print(f"sell {item.get_symbol()}")
+                    market_order(trader, "sell", item.get_symbol(), contract_size=int(abs(item.get_shares())/100))
                 time.sleep(1)
 
 
