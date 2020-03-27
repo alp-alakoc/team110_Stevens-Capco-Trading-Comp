@@ -3,6 +3,7 @@ import time
 import numpy as np
 import pandas as pd
 import shift
+import datetime
 
 def subscribe():
     trader = shift.Trader("test001")
@@ -52,13 +53,6 @@ if __name__== "__main__":
     #ma_table = pd.DataFrame(columns=ls)
     count = 0
     while True:
-        # if prices.shape[0]<ma_window_long:
-        #     prices = update_data(ls,prices,40)
-        #     print(f"prices are: {prices.iloc[-1, :]}")
-        #     print("=" * 100)
-        #     print(f"p&l is {trader.get_portfolio_summary().get_total_realized_pl()}")
-        #     time.sleep(60)
-        #     continue
         prices = update_data(ls, prices,40)
         macd_table = prices.apply(macd,axis=0)
         latest_diff = macd_table.iloc[-1,:]
@@ -67,11 +61,13 @@ if __name__== "__main__":
                 size = int((trader.get_portfolio_item(symbol).get_short_shares()+(100-trader.get_portfolio_item(symbol).get_long_shares()))/100)
                 print(f"now buy{symbol}, amount{size}")
                 market_order(trader, "buy", symbol, contract_size=size)
+                count += 1
                 time.sleep(0.5)
             elif diff < 0 and trader.get_portfolio_item(symbol).get_short_shares()!=100:
                 size = int((trader.get_portfolio_item(symbol).get_long_shares()+(100-trader.get_portfolio_item(symbol).get_short_shares()))/100)
                 print(f"now sell{symbol}, amount{size}")
                 market_order(trader, "sell", symbol, contract_size=size)
+                count += 1
                 time.sleep(0.5)
             else:
                 pass
@@ -79,10 +75,18 @@ if __name__== "__main__":
         print("="*100)
         print(f"p&l is {trader.get_portfolio_summary().get_total_realized_pl()}")
         time.sleep(60)
-        if count == 210:
-            break
-        else:
-            count +=1
+        if prices.index[-1].time()>= datetime.time(hour=15,minute=30,second=0):
+            if count<40:
+                for _ in range(40-count):
+                    market_order(trader, "buy", "VIXY", contract_size=5)
+                    time.sleep(90)
+            for item in trader.get_portfolio_items().values():
+                if item.get_shares()<0:
+                    market_order(trader, "buy", item.get_symbol(), contract_size=int(item.get_shares()/100))
+                if item.get_shares()>0:
+                    market_order(trader, "sell", item.get_symbol(), contract_size=int(item.get_shares()/100))
+                time.sleep(1)
+
 
 
 
