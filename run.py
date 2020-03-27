@@ -56,7 +56,7 @@ if __name__== "__main__":
     while True:
         print(f"the {count_while} loop")
         if count_while==0:
-            for _ in range(30):
+            for _ in range(35):
                 prices = update_data(ls, prices,40)
                 print("pre loop")
                 time.sleep(60)
