@@ -1,2 +1,2254 @@
 [[32;1;1mINFO[0m] Connection established.
-[[32;1;1mINFO[0m] Disconnected.
+the 0 loop
+pre loop
+pre loop
+pre loop
+pre loop
+pre loop
+pre loop
+pre loop
+pre loop
+pre loop
+pre loop
+pre loop
+pre loop
+pre loop
+pre loop
+pre loop
+pre loop
+pre loop
+pre loop
+pre loop
+pre loop
+pre loop
+pre loop
+pre loop
+pre loop
+pre loop
+pre loop
+pre loop
+pre loop
+pre loop
+pre loop
+pre loop
+pre loop
+pre loop
+pre loop
+pre loop
+the 1 loop
+the 2 loop
+the 3 loop
+the 4 loop
+the 5 loop
+the 6 loop
+the 7 loop
+the 8 loop
+the 9 loop
+the 10 loop
+the 11 loop
+the 12 loop
+the 13 loop
+the 14 loop
+the 15 loop
+the 16 loop
+the 17 loop
+the 18 loop
+the 19 loop
+the 20 loop
+the 21 loop
+the 22 loop
+the 23 loop
+the 24 loop
+the 25 loop
+the 26 loop
+the 27 loop
+the 28 loop
+the 29 loop
+the 30 loop
+the 31 loop
+the 32 loop
+the 33 loop
+the 34 loop
+the 35 loop
+the 36 loop
+the 37 loop
+the 38 loop
+the 39 loop
+the 40 loop
+the 41 loop
+the 42 loop
+the 43 loop
+the 44 loop
+the 45 loop
+the 46 loop
+the 47 loop
+the 48 loop
+the 49 loop
+the 50 loop
+the 51 loop
+the 52 loop
+the 53 loop
+the 54 loop
+the 55 loop
+the 56 loop
+the 57 loop
+the 58 loop
+the 59 loop
+the 60 loop
+the 61 loop
+the 62 loop
+the 63 loop
+the 64 loop
+the 65 loop
+the 66 loop
+the 67 loop
+the 68 loop
+the 69 loop
+the 70 loop
+the 71 loop
+the 72 loop
+the 73 loop
+the 74 loop
+the 75 loop
+the 76 loop
+the 77 loop
+the 78 loop
+the 79 loop
+the 80 loop
+the 81 loop
+the 82 loop
+the 83 loop
+the 84 loop
+the 85 loop
+the 86 loop
+the 87 loop
+the 88 loop
+the 89 loop
+the 90 loop
+the 91 loop
+the 92 loop
+the 93 loop
+the 94 loop
+the 95 loop
+the 96 loop
+the 97 loop
+the 98 loop
+the 99 loop
+the 100 loop
+the 101 loop
+the 102 loop
+the 103 loop
+the 104 loop
+the 105 loop
+the 106 loop
+the 107 loop
+the 108 loop
+the 109 loop
+the 110 loop
+the 111 loop
+the 112 loop
+the 113 loop
+the 114 loop
+the 115 loop
+the 116 loop
+the 117 loop
+the 118 loop
+the 119 loop
+the 120 loop
+the 121 loop
+the 122 loop
+the 123 loop
+the 124 loop
+the 125 loop
+the 126 loop
+the 127 loop
+the 128 loop
+the 129 loop
+the 130 loop
+the 131 loop
+the 132 loop
+the 133 loop
+the 134 loop
+the 135 loop
+the 136 loop
+the 137 loop
+the 138 loop
+the 139 loop
+the 140 loop
+the 141 loop
+the 142 loop
+the 143 loop
+the 144 loop
+the 145 loop
+the 146 loop
+the 147 loop
+the 148 loop
+the 149 loop
+the 150 loop
+the 151 loop
+the 152 loop
+the 153 loop
+the 154 loop
+the 155 loop
+the 156 loop
+the 157 loop
+the 158 loop
+the 159 loop
+the 160 loop
+the 161 loop
+the 162 loop
+the 163 loop
+the 164 loop
+the 165 loop
+the 166 loop
+the 167 loop
+the 168 loop
+the 169 loop
+the 170 loop
+the 171 loop
+the 172 loop
+the 173 loop
+the 174 loop
+the 175 loop
+the 176 loop
+the 177 loop
+the 178 loop
+the 179 loop
+the 180 loop
+the 181 loop
+the 182 loop
+the 183 loop
+the 184 loop
+the 185 loop
+the 186 loop
+the 187 loop
+the 188 loop
+the 189 loop
+the 190 loop
+the 191 loop
+the 192 loop
+the 193 loop
+the 194 loop
+the 195 loop
+the 196 loop
+the 197 loop
+the 198 loop
+the 199 loop
+the 200 loop
+the 201 loop
+the 202 loop
+the 203 loop
+the 204 loop
+the 205 loop
+the 206 loop
+the 207 loop
+the 208 loop
+the 209 loop
+the 210 loop
+the 211 loop
+the 212 loop
+the 213 loop
+the 214 loop
+the 215 loop
+the 216 loop
+the 217 loop
+the 218 loop
+the 219 loop
+the 220 loop
+the 221 loop
+the 222 loop
+the 223 loop
+the 224 loop
+the 225 loop
+the 226 loop
+the 227 loop
+the 228 loop
+the 229 loop
+the 230 loop
+the 231 loop
+the 232 loop
+the 233 loop
+the 234 loop
+the 235 loop
+the 236 loop
+the 237 loop
+the 238 loop
+the 239 loop
+the 240 loop
+the 241 loop
+the 242 loop
+the 243 loop
+the 244 loop
+the 245 loop
+the 246 loop
+the 247 loop
+the 248 loop
+the 249 loop
+the 250 loop
+the 251 loop
+the 252 loop
+the 253 loop
+the 254 loop
+the 255 loop
+the 256 loop
+the 257 loop
+the 258 loop
+the 259 loop
+the 260 loop
+the 261 loop
+the 262 loop
+the 263 loop
+the 264 loop
+the 265 loop
+the 266 loop
+the 267 loop
+the 268 loop
+the 269 loop
+the 270 loop
+the 271 loop
+the 272 loop
+the 273 loop
+the 274 loop
+the 275 loop
+the 276 loop
+the 277 loop
+the 278 loop
+the 279 loop
+the 280 loop
+the 281 loop
+the 282 loop
+the 283 loop
+the 284 loop
+the 285 loop
+the 286 loop
+the 287 loop
+the 288 loop
+the 289 loop
+the 290 loop
+the 291 loop
+the 292 loop
+the 293 loop
+the 294 loop
+the 295 loop
+the 296 loop
+the 297 loop
+the 298 loop
+the 299 loop
+the 300 loop
+the 301 loop
+the 302 loop
+the 303 loop
+the 304 loop
+the 305 loop
+the 306 loop
+the 307 loop
+the 308 loop
+the 309 loop
+the 310 loop
+the 311 loop
+the 312 loop
+the 313 loop
+the 314 loop
+the 315 loop
+the 316 loop
+the 317 loop
+sell AAPL
+sell AXP
+buy BA
+sell CAT
+buy CSCO
+sell CVX
+buy DIA
+buy DIS
+sell GS
+buy HD
+sell IBM
+buy INTC
+buy JNJ
+buy JPM
+buy KO
+sell MCD
+buy MMM
+buy MRK
+buy MSFT
+buy NKE
+sell PFE
+sell PG
+buy SPY
+buy TRV
+buy UNH
+buy UTX
+buy V
+buy VIXY
+sell VZ
+buy WBA
+buy WMT
+sell XOM
+the 318 loop
+sell AAPL
+sell AXP
+buy BA
+sell CAT
+buy CSCO
+sell CVX
+buy DIA
+buy DIS
+sell GS
+buy HD
+sell IBM
+buy INTC
+buy JNJ
+sell JPM
+sell KO
+sell MCD
+buy MMM
+buy MRK
+buy MSFT
+buy NKE
+sell PFE
+sell PG
+buy SPY
+buy TRV
+buy UNH
+buy UTX
+buy V
+buy VIXY
+sell VZ
+buy WBA
+sell WMT
+sell XOM
+the 319 loop
+sell AAPL
+sell AXP
+buy BA
+sell CAT
+buy CSCO
+sell CVX
+sell DIA
+sell DIS
+sell GS
+buy HD
+sell IBM
+buy INTC
+buy JNJ
+sell JPM
+sell KO
+sell MCD
+sell MMM
+buy MRK
+sell MSFT
+sell NKE
+sell PFE
+sell PG
+sell SPY
+sell TRV
+buy UNH
+sell UTX
+sell V
+buy VIXY
+sell VZ
+sell WBA
+sell WMT
+sell XOM
+the 320 loop
+sell AAPL
+sell AXP
+buy BA
+sell CAT
+buy CSCO
+sell CVX
+sell DIA
+sell DIS
+sell GS
+buy HD
+sell IBM
+buy INTC
+sell JNJ
+sell JPM
+sell KO
+sell MCD
+sell MMM
+buy MRK
+sell MSFT
+sell NKE
+sell PFE
+sell PG
+sell SPY
+sell TRV
+buy UNH
+sell UTX
+sell V
+buy VIXY
+sell VZ
+sell WBA
+sell WMT
+sell XOM
+the 321 loop
+sell AAPL
+sell AXP
+buy BA
+sell CAT
+buy CSCO
+sell CVX
+sell DIA
+sell DIS
+sell GS
+buy HD
+sell IBM
+buy INTC
+sell JNJ
+sell JPM
+sell KO
+sell MCD
+buy MMM
+buy MRK
+buy MSFT
+sell NKE
+sell PFE
+sell PG
+sell SPY
+buy TRV
+buy UNH
+buy UTX
+sell V
+buy VIXY
+sell VZ
+sell WBA
+buy WMT
+sell XOM
+the 322 loop
+sell AAPL
+sell AXP
+buy BA
+sell CAT
+buy CSCO
+sell CVX
+sell DIA
+sell DIS
+sell GS
+sell HD
+buy IBM
+buy INTC
+sell JNJ
+sell JPM
+sell KO
+sell MCD
+buy MMM
+buy MRK
+buy MSFT
+sell NKE
+sell PFE
+sell PG
+sell SPY
+buy TRV
+buy UNH
+buy UTX
+sell V
+buy VIXY
+sell VZ
+sell WBA
+buy WMT
+sell XOM
+the 323 loop
+sell AAPL
+sell AXP
+sell BA
+sell CAT
+buy CSCO
+sell CVX
+sell DIA
+sell DIS
+sell GS
+sell HD
+buy IBM
+buy INTC
+sell JNJ
+sell JPM
+sell KO
+sell MCD
+buy MMM
+buy MRK
+buy MSFT
+sell NKE
+sell PFE
+sell PG
+sell SPY
+buy TRV
+buy UNH
+buy UTX
+sell V
+buy VIXY
+sell VZ
+sell WBA
+buy WMT
+sell XOM
+the 324 loop
+sell AAPL
+sell AXP
+sell BA
+sell CAT
+buy CSCO
+sell CVX
+sell DIA
+sell DIS
+sell GS
+sell HD
+buy IBM
+buy INTC
+sell JNJ
+sell JPM
+sell KO
+sell MCD
+buy MMM
+buy MRK
+buy MSFT
+sell NKE
+sell PFE
+sell PG
+sell SPY
+buy TRV
+buy UNH
+buy UTX
+sell V
+buy VIXY
+sell VZ
+sell WBA
+buy WMT
+sell XOM
+the 325 loop
+sell AAPL
+sell AXP
+sell BA
+sell CAT
+buy CSCO
+sell CVX
+sell DIA
+sell DIS
+sell GS
+sell HD
+buy IBM
+buy INTC
+sell JNJ
+sell JPM
+buy KO
+sell MCD
+buy MMM
+buy MRK
+buy MSFT
+sell NKE
+sell PFE
+sell PG
+sell SPY
+sell TRV
+buy UNH
+sell UTX
+sell V
+buy VIXY
+sell VZ
+sell WBA
+buy WMT
+sell XOM
+the 326 loop
+sell AAPL
+sell AXP
+sell BA
+sell CAT
+buy CSCO
+sell CVX
+sell DIA
+sell DIS
+sell GS
+sell HD
+buy IBM
+buy INTC
+sell JNJ
+sell JPM
+buy KO
+sell MCD
+buy MMM
+sell MRK
+sell MSFT
+sell NKE
+sell PFE
+sell PG
+sell SPY
+sell TRV
+sell UNH
+sell UTX
+sell V
+buy VIXY
+sell VZ
+buy WBA
+buy WMT
+sell XOM
+the 327 loop
+sell AAPL
+sell AXP
+sell BA
+sell CAT
+buy CSCO
+sell CVX
+sell DIA
+sell DIS
+sell GS
+sell HD
+buy IBM
+buy INTC
+sell JNJ
+sell JPM
+buy KO
+sell MCD
+buy MMM
+sell MRK
+sell MSFT
+sell NKE
+sell PFE
+sell PG
+sell SPY
+buy TRV
+sell UNH
+sell UTX
+sell V
+buy VIXY
+sell VZ
+buy WBA
+buy WMT
+sell XOM
+the 328 loop
+buy AAPL
+sell AXP
+sell BA
+sell CAT
+buy CSCO
+sell CVX
+sell DIA
+sell DIS
+sell GS
+sell HD
+buy IBM
+buy INTC
+sell JNJ
+sell JPM
+buy KO
+sell MCD
+buy MMM
+sell MRK
+sell MSFT
+sell NKE
+sell PFE
+sell PG
+sell SPY
+buy TRV
+sell UNH
+sell UTX
+sell V
+buy VIXY
+sell VZ
+buy WBA
+buy WMT
+sell XOM
+the 329 loop
+buy AAPL
+sell AXP
+sell BA
+buy CAT
+buy CSCO
+sell CVX
+sell DIA
+sell DIS
+sell GS
+sell HD
+sell IBM
+buy INTC
+sell JNJ
+sell JPM
+buy KO
+sell MCD
+buy MMM
+sell MRK
+sell MSFT
+sell NKE
+sell PFE
+sell PG
+sell SPY
+buy TRV
+sell UNH
+sell UTX
+sell V
+buy VIXY
+sell VZ
+buy WBA
+buy WMT
+sell XOM
+the 330 loop
+buy AAPL
+sell AXP
+sell BA
+buy CAT
+buy CSCO
+sell CVX
+sell DIA
+sell DIS
+sell GS
+sell HD
+sell IBM
+buy INTC
+sell JNJ
+sell JPM
+buy KO
+sell MCD
+sell MMM
+sell MRK
+sell MSFT
+sell NKE
+sell PFE
+sell PG
+sell SPY
+buy TRV
+sell UNH
+sell UTX
+sell V
+buy VIXY
+sell VZ
+buy WBA
+buy WMT
+sell XOM
+the 331 loop
+buy AAPL
+sell AXP
+buy BA
+buy CAT
+sell CSCO
+sell CVX
+sell DIA
+sell DIS
+sell GS
+sell HD
+sell IBM
+the 332 loop
+sell AAPL
+buy INTC
+sell JNJ
+sell JPM
+sell KO
+sell MCD
+sell MMM
+sell MRK
+sell MSFT
+sell NKE
+sell PFE
+sell PG
+sell SPY
+sell TRV
+sell UNH
+sell UTX
+sell V
+buy VIXY
+sell VZ
+sell WBA
+buy WMT
+sell XOM
+the 333 loop
+sell VZ
+sell WBA
+buy WMT
+sell XOM
+the 334 loop
+sell AXP
+buy BA
+buy CAT
+sell CSCO
+sell CVX
+sell DIA
+sell DIS
+sell GS
+sell HD
+sell IBM
+sell WMT
+the 335 loop
+sell AAPL
+buy AXP
+buy BA
+buy CAT
+sell CSCO
+sell CVX
+sell DIA
+sell DIS
+sell GS
+buy HD
+sell IBM
+buy INTC
+sell JNJ
+sell JPM
+sell KO
+sell MCD
+buy MMM
+sell MRK
+sell MSFT
+sell NKE
+sell PFE
+sell PG
+sell SPY
+sell TRV
+sell UNH
+sell UTX
+sell V
+buy VIXY
+sell VZ
+sell WBA
+sell WMT
+sell XOM
+the 336 loop
+sell AAPL
+buy AXP
+buy BA
+buy CAT
+sell CSCO
+sell CVX
+sell DIA
+sell DIS
+sell GS
+buy HD
+buy IBM
+buy INTC
+sell JNJ
+sell JPM
+sell KO
+sell MCD
+buy MMM
+sell MRK
+sell MSFT
+sell NKE
+sell PFE
+sell PG
+sell SPY
+sell TRV
+sell UNH
+sell UTX
+sell V
+buy VIXY
+sell VZ
+sell WBA
+sell WMT
+sell XOM
+the 337 loop
+sell AAPL
+buy AXP
+buy BA
+buy CAT
+sell CSCO
+sell CVX
+sell DIA
+sell DIS
+sell GS
+buy HD
+buy IBM
+buy INTC
+sell JNJ
+sell JPM
+sell KO
+sell MCD
+buy MMM
+sell MRK
+sell MSFT
+sell NKE
+sell PFE
+sell PG
+sell SPY
+sell TRV
+sell UNH
+sell UTX
+sell V
+buy VIXY
+sell VZ
+sell WBA
+sell WMT
+sell XOM
+the 338 loop
+sell AAPL
+buy AXP
+buy BA
+buy CAT
+sell CSCO
+sell CVX
+sell DIA
+sell DIS
+sell GS
+buy HD
+buy IBM
+buy INTC
+sell JNJ
+sell JPM
+sell KO
+sell MCD
+buy MMM
+sell MRK
+sell MSFT
+sell NKE
+sell PFE
+sell PG
+sell SPY
+sell TRV
+sell UNH
+sell UTX
+sell V
+buy VIXY
+sell VZ
+sell WBA
+sell WMT
+sell XOM
+the 339 loop
+sell AAPL
+buy AXP
+buy BA
+buy CAT
+sell CSCO
+sell CVX
+sell DIA
+sell DIS
+sell GS
+buy HD
+buy IBM
+buy INTC
+sell JNJ
+sell JPM
+sell KO
+sell MCD
+buy MMM
+sell MRK
+sell MSFT
+sell NKE
+sell PFE
+sell PG
+sell SPY
+sell TRV
+sell UNH
+sell UTX
+sell V
+buy VIXY
+sell VZ
+sell WBA
+sell WMT
+sell XOM
+the 340 loop
+sell AAPL
+buy AXP
+buy BA
+buy CAT
+sell CSCO
+sell CVX
+sell DIA
+sell DIS
+sell GS
+buy HD
+buy IBM
+buy INTC
+sell JNJ
+sell JPM
+sell KO
+sell MCD
+buy MMM
+sell MRK
+sell MSFT
+sell NKE
+sell PFE
+sell PG
+sell SPY
+sell TRV
+sell UNH
+sell UTX
+sell V
+buy VIXY
+sell VZ
+sell WBA
+sell WMT
+sell XOM
+the 341 loop
+sell AAPL
+buy AXP
+buy BA
+buy CAT
+sell CSCO
+sell CVX
+sell DIA
+sell DIS
+sell GS
+buy HD
+buy IBM
+buy INTC
+sell JNJ
+sell JPM
+sell KO
+sell MCD
+buy MMM
+sell MRK
+sell MSFT
+sell NKE
+sell PFE
+sell PG
+sell SPY
+sell TRV
+sell UNH
+sell UTX
+sell V
+buy VIXY
+sell VZ
+sell WBA
+sell WMT
+sell XOM
+the 342 loop
+sell AAPL
+buy AXP
+buy BA
+buy CAT
+sell CSCO
+sell CVX
+sell DIA
+sell DIS
+sell GS
+buy HD
+buy IBM
+buy INTC
+sell JNJ
+sell JPM
+sell KO
+sell MCD
+buy MMM
+sell MRK
+sell MSFT
+sell NKE
+sell PFE
+sell PG
+sell SPY
+sell TRV
+sell UNH
+sell UTX
+sell V
+buy VIXY
+sell VZ
+sell WBA
+sell WMT
+sell XOM
+the 343 loop
+sell AAPL
+buy AXP
+buy BA
+buy CAT
+sell CSCO
+sell CVX
+sell DIA
+sell DIS
+sell GS
+buy HD
+buy IBM
+buy INTC
+sell JNJ
+sell JPM
+sell KO
+sell MCD
+buy MMM
+sell MRK
+sell MSFT
+sell NKE
+sell PFE
+sell PG
+sell SPY
+sell TRV
+sell UNH
+sell UTX
+sell V
+buy VIXY
+sell VZ
+sell WBA
+sell WMT
+sell XOM
+the 344 loop
+sell AAPL
+buy AXP
+buy BA
+buy CAT
+sell CSCO
+sell CVX
+sell DIA
+sell DIS
+sell GS
+buy HD
+buy IBM
+buy INTC
+sell JNJ
+sell JPM
+sell KO
+sell MCD
+buy MMM
+sell MRK
+sell MSFT
+sell NKE
+sell PFE
+sell PG
+sell SPY
+sell TRV
+sell UNH
+sell UTX
+sell V
+buy VIXY
+sell VZ
+sell WBA
+sell WMT
+sell XOM
+the 345 loop
+sell AAPL
+buy AXP
+buy BA
+buy CAT
+sell CSCO
+sell CVX
+sell DIA
+sell DIS
+sell GS
+buy HD
+buy IBM
+buy INTC
+sell JNJ
+sell JPM
+sell KO
+sell MCD
+buy MMM
+sell MRK
+sell MSFT
+sell NKE
+sell PFE
+sell PG
+sell SPY
+sell TRV
+sell UNH
+sell UTX
+sell V
+buy VIXY
+sell VZ
+sell WBA
+sell WMT
+sell XOM
+the 346 loop
+sell AAPL
+buy AXP
+buy BA
+buy CAT
+sell CSCO
+sell CVX
+sell DIA
+sell DIS
+sell GS
+buy HD
+buy IBM
+buy INTC
+sell JNJ
+sell JPM
+sell KO
+sell MCD
+buy MMM
+sell MRK
+sell MSFT
+sell NKE
+sell PFE
+sell PG
+sell SPY
+sell TRV
+sell UNH
+sell UTX
+sell V
+buy VIXY
+sell VZ
+sell WBA
+sell WMT
+sell XOM
+the 347 loop
+sell AAPL
+buy AXP
+buy BA
+buy CAT
+sell CSCO
+sell CVX
+sell DIA
+sell DIS
+sell GS
+buy HD
+buy IBM
+buy INTC
+sell JNJ
+sell JPM
+sell KO
+sell MCD
+buy MMM
+sell MRK
+sell MSFT
+sell NKE
+sell PFE
+sell PG
+sell SPY
+sell TRV
+sell UNH
+sell UTX
+sell V
+buy VIXY
+sell VZ
+sell WBA
+sell WMT
+sell XOM
+the 348 loop
+sell AAPL
+buy AXP
+buy BA
+buy CAT
+sell CSCO
+sell CVX
+sell DIA
+sell DIS
+sell GS
+buy HD
+buy IBM
+buy INTC
+sell JNJ
+sell JPM
+sell KO
+sell MCD
+buy MMM
+sell MRK
+sell MSFT
+sell NKE
+sell PFE
+sell PG
+sell SPY
+sell TRV
+sell UNH
+sell UTX
+sell V
+buy VIXY
+sell VZ
+sell WBA
+sell WMT
+sell XOM
+the 349 loop
+sell AAPL
+buy AXP
+buy BA
+buy CAT
+sell CSCO
+sell CVX
+sell DIA
+sell DIS
+sell GS
+buy HD
+buy IBM
+buy INTC
+sell JNJ
+sell JPM
+sell KO
+sell MCD
+buy MMM
+sell MRK
+sell MSFT
+sell NKE
+sell PFE
+sell PG
+sell SPY
+sell TRV
+sell UNH
+sell UTX
+sell V
+buy VIXY
+sell VZ
+sell WBA
+sell WMT
+sell XOM
+the 350 loop
+sell AAPL
+buy AXP
+buy BA
+buy CAT
+sell CSCO
+sell CVX
+sell DIA
+sell DIS
+sell GS
+buy HD
+buy IBM
+buy INTC
+sell JNJ
+sell JPM
+sell KO
+sell MCD
+buy MMM
+sell MRK
+sell MSFT
+sell NKE
+sell PFE
+sell PG
+sell SPY
+sell TRV
+sell UNH
+sell UTX
+sell V
+buy VIXY
+sell VZ
+sell WBA
+sell WMT
+sell XOM
+the 351 loop
+sell AAPL
+buy AXP
+buy BA
+buy CAT
+sell CSCO
+sell CVX
+sell DIA
+sell DIS
+sell GS
+buy HD
+buy IBM
+buy INTC
+sell JNJ
+sell JPM
+sell KO
+sell MCD
+buy MMM
+sell MRK
+sell MSFT
+sell NKE
+sell PFE
+sell PG
+sell SPY
+sell TRV
+sell UNH
+sell UTX
+sell V
+buy VIXY
+sell VZ
+sell WBA
+sell WMT
+sell XOM
+the 352 loop
+sell AAPL
+buy AXP
+buy BA
+buy CAT
+sell CSCO
+sell CVX
+sell DIA
+sell DIS
+sell GS
+buy HD
+buy IBM
+buy INTC
+sell JNJ
+sell JPM
+sell KO
+sell MCD
+buy MMM
+sell MRK
+sell MSFT
+sell NKE
+sell PFE
+sell PG
+sell SPY
+sell TRV
+sell UNH
+sell UTX
+sell V
+buy VIXY
+sell VZ
+sell WBA
+sell WMT
+sell XOM
+the 353 loop
+sell AAPL
+buy AXP
+buy BA
+buy CAT
+sell CSCO
+sell CVX
+sell DIA
+sell DIS
+sell GS
+buy HD
+buy IBM
+buy INTC
+sell JNJ
+sell JPM
+sell KO
+sell MCD
+buy MMM
+sell MRK
+sell MSFT
+sell NKE
+sell PFE
+sell PG
+sell SPY
+sell TRV
+sell UNH
+sell UTX
+sell V
+buy VIXY
+sell VZ
+sell WBA
+sell WMT
+sell XOM
+the 354 loop
+sell AAPL
+buy AXP
+buy BA
+buy CAT
+sell CSCO
+sell CVX
+sell DIA
+sell DIS
+sell GS
+buy HD
+buy IBM
+buy INTC
+sell JNJ
+sell JPM
+sell KO
+sell MCD
+buy MMM
+sell MRK
+sell MSFT
+sell NKE
+sell PFE
+sell PG
+sell SPY
+sell TRV
+sell UNH
+sell UTX
+sell V
+buy VIXY
+sell VZ
+sell WBA
+sell WMT
+sell XOM
+the 355 loop
+sell AAPL
+buy AXP
+buy BA
+buy CAT
+sell CSCO
+sell CVX
+sell DIA
+sell DIS
+sell GS
+buy HD
+buy IBM
+buy INTC
+sell JNJ
+sell JPM
+sell KO
+sell MCD
+buy MMM
+sell MRK
+sell MSFT
+sell NKE
+sell PFE
+sell PG
+sell SPY
+sell TRV
+sell UNH
+sell UTX
+sell V
+buy VIXY
+sell VZ
+sell WBA
+sell WMT
+sell XOM
+the 356 loop
+sell AAPL
+buy AXP
+buy BA
+buy CAT
+sell CSCO
+sell CVX
+sell DIA
+sell DIS
+sell GS
+buy HD
+buy IBM
+buy INTC
+sell JNJ
+sell JPM
+sell KO
+sell MCD
+buy MMM
+sell MRK
+sell MSFT
+sell NKE
+sell PFE
+sell PG
+sell SPY
+sell TRV
+sell UNH
+sell UTX
+sell V
+buy VIXY
+sell VZ
+sell WBA
+sell WMT
+sell XOM
+the 357 loop
+sell AAPL
+buy AXP
+buy BA
+buy CAT
+sell CSCO
+sell CVX
+sell DIA
+sell DIS
+sell GS
+buy HD
+buy IBM
+buy INTC
+sell JNJ
+sell JPM
+sell KO
+sell MCD
+buy MMM
+sell MRK
+sell MSFT
+sell NKE
+sell PFE
+sell PG
+sell SPY
+sell TRV
+sell UNH
+sell UTX
+sell V
+buy VIXY
+sell VZ
+sell WBA
+sell WMT
+sell XOM
+the 358 loop
+sell AAPL
+buy AXP
+buy BA
+buy CAT
+sell CSCO
+sell CVX
+sell DIA
+sell DIS
+sell GS
+buy HD
+buy IBM
+buy INTC
+sell JNJ
+sell JPM
+sell KO
+sell MCD
+buy MMM
+sell MRK
+sell MSFT
+sell NKE
+sell PFE
+sell PG
+sell SPY
+sell TRV
+sell UNH
+sell UTX
+sell V
+buy VIXY
+sell VZ
+sell WBA
+sell WMT
+sell XOM
+the 359 loop
+sell AAPL
+buy AXP
+buy BA
+buy CAT
+sell CSCO
+sell CVX
+sell DIA
+sell DIS
+sell GS
+buy HD
+buy IBM
+buy INTC
+sell JNJ
+sell JPM
+sell KO
+sell MCD
+buy MMM
+sell MRK
+sell MSFT
+sell NKE
+sell PFE
+sell PG
+sell SPY
+sell TRV
+sell UNH
+sell UTX
+sell V
+buy VIXY
+sell VZ
+sell WBA
+sell WMT
+sell XOM
+the 360 loop
+sell AAPL
+buy AXP
+buy BA
+buy CAT
+sell CSCO
+sell CVX
+sell DIA
+sell DIS
+sell GS
+buy HD
+buy IBM
+buy INTC
+sell JNJ
+sell JPM
+sell KO
+sell MCD
+buy MMM
+sell MRK
+sell MSFT
+sell NKE
+sell PFE
+sell PG
+sell SPY
+sell TRV
+sell UNH
+sell UTX
+sell V
+buy VIXY
+sell VZ
+sell WBA
+sell WMT
+sell XOM
+the 361 loop
+sell AAPL
+buy AXP
+buy BA
+buy CAT
+sell CSCO
+sell CVX
+sell DIA
+sell DIS
+sell GS
+buy HD
+buy IBM
+buy INTC
+sell JNJ
+sell JPM
+sell KO
+sell MCD
+buy MMM
+sell MRK
+sell MSFT
+sell NKE
+sell PFE
+sell PG
+sell SPY
+sell TRV
+sell UNH
+sell UTX
+sell V
+buy VIXY
+sell VZ
+sell WBA
+sell WMT
+sell XOM
+the 362 loop
+sell AAPL
+buy AXP
+buy BA
+buy CAT
+sell CSCO
+sell CVX
+sell DIA
+sell DIS
+sell GS
+buy HD
+buy IBM
+buy INTC
+sell JNJ
+sell JPM
+sell KO
+sell MCD
+buy MMM
+sell MRK
+sell MSFT
+sell NKE
+sell PFE
+sell PG
+sell SPY
+sell TRV
+sell UNH
+sell UTX
+sell V
+buy VIXY
+sell VZ
+sell WBA
+sell WMT
+sell XOM
+the 363 loop
+sell AAPL
+buy AXP
+buy BA
+buy CAT
+sell CSCO
+sell CVX
+sell DIA
+sell DIS
+sell GS
+buy HD
+buy IBM
+buy INTC
+sell JNJ
+sell JPM
+sell KO
+sell MCD
+buy MMM
+sell MRK
+sell MSFT
+sell NKE
+sell PFE
+sell PG
+sell SPY
+sell TRV
+sell UNH
+sell UTX
+sell V
+buy VIXY
+sell VZ
+sell WBA
+sell WMT
+sell XOM
+the 364 loop
+sell AAPL
+buy AXP
+buy BA
+buy CAT
+sell CSCO
+sell CVX
+sell DIA
+sell DIS
+sell GS
+buy HD
+buy IBM
+buy INTC
+sell JNJ
+sell JPM
+sell KO
+sell MCD
+buy MMM
+sell MRK
+sell MSFT
+sell NKE
+sell PFE
+sell PG
+sell SPY
+sell TRV
+sell UNH
+sell UTX
+sell V
+buy VIXY
+sell VZ
+sell WBA
+sell WMT
+sell XOM
+the 365 loop
+sell AAPL
+buy AXP
+buy BA
+buy CAT
+sell CSCO
+sell CVX
+sell DIA
+sell DIS
+sell GS
+buy HD
+buy IBM
+buy INTC
+sell JNJ
+sell JPM
+sell KO
+sell MCD
+buy MMM
+sell MRK
+sell MSFT
+sell NKE
+sell PFE
+sell PG
+sell SPY
+sell TRV
+sell UNH
+sell UTX
+sell V
+buy VIXY
+sell VZ
+sell WBA
+sell WMT
+sell XOM
+the 366 loop
+sell AAPL
+buy AXP
+buy BA
+buy CAT
+sell CSCO
+sell CVX
+sell DIA
+sell DIS
+sell GS
+buy HD
+buy IBM
+buy INTC
+sell JNJ
+sell JPM
+sell KO
+sell MCD
+buy MMM
+sell MRK
+sell MSFT
+sell NKE
+sell PFE
+sell PG
+sell SPY
+sell TRV
+sell UNH
+sell UTX
+sell V
+buy VIXY
+sell VZ
+sell WBA
+sell WMT
+sell XOM
+the 367 loop
+sell AAPL
+buy AXP
+buy BA
+buy CAT
+sell CSCO
+sell CVX
+sell DIA
+sell DIS
+sell GS
+buy HD
+buy IBM
+buy INTC
+sell JNJ
+sell JPM
+sell KO
+sell MCD
+buy MMM
+sell MRK
+sell MSFT
+sell NKE
+sell PFE
+sell PG
+sell SPY
+sell TRV
+sell UNH
+sell UTX
+sell V
+buy VIXY
+sell VZ
+sell WBA
+sell WMT
+sell XOM
+the 368 loop
+sell AAPL
+buy AXP
+buy BA
+buy CAT
+sell CSCO
+sell CVX
+sell DIA
+sell DIS
+sell GS
+buy HD
+buy IBM
+buy INTC
+sell JNJ
+sell JPM
+sell KO
+sell MCD
+buy MMM
+sell MRK
+sell MSFT
+sell NKE
+sell PFE
+sell PG
+sell SPY
+sell TRV
+sell UNH
+sell UTX
+sell V
+buy VIXY
+sell VZ
+sell WBA
+sell WMT
+sell XOM
+the 369 loop
+sell AAPL
+buy AXP
+buy BA
+buy CAT
+sell CSCO
+sell CVX
+sell DIA
+sell DIS
+sell GS
+buy HD
+buy IBM
+buy INTC
+sell JNJ
+sell JPM
+sell KO
+sell MCD
+buy MMM
+sell MRK
+sell MSFT
+sell NKE
+sell PFE
+sell PG
+sell SPY
+sell TRV
+sell UNH
+sell UTX
+sell V
+buy VIXY
+sell VZ
+sell WBA
+sell WMT
+sell XOM
+the 370 loop
+sell AAPL
+buy AXP
+buy BA
+buy CAT
+sell CSCO
+sell CVX
+sell DIA
+sell DIS
+sell GS
+buy HD
+buy IBM
+buy INTC
+sell JNJ
+sell JPM
+sell KO
+sell MCD
+buy MMM
+sell MRK
+sell MSFT
+sell NKE
+sell PFE
+sell PG
+sell SPY
+sell TRV
+sell UNH
+sell UTX
+sell V
+buy VIXY
+sell VZ
+sell WBA
+sell WMT
+sell XOM
+the 371 loop
+sell AAPL
+buy AXP
+buy BA
+buy CAT
+sell CSCO
+sell CVX
+sell DIA
+sell DIS
+sell GS
+buy HD
+buy IBM
+buy INTC
+sell JNJ
+sell JPM
+sell KO
+sell MCD
+buy MMM
+sell MRK
+sell MSFT
+sell NKE
+sell PFE
+sell PG
+sell SPY
+sell TRV
+sell UNH
+sell UTX
+sell V
+buy VIXY
+sell VZ
+sell WBA
+sell WMT
+sell XOM
+the 372 loop
+sell AAPL
+buy AXP
+buy BA
+buy CAT
+sell CSCO
+sell CVX
+sell DIA
+sell DIS
+sell GS
+buy HD
+buy IBM
+buy INTC
+sell JNJ
+sell JPM
+sell KO
+sell MCD
+buy MMM
+sell MRK
+sell MSFT
+sell NKE
+sell PFE
+sell PG
+sell SPY
+sell TRV
+sell UNH
+sell UTX
+sell V
+buy VIXY
+sell VZ
+sell WBA
+sell WMT
+sell XOM
+the 373 loop
+sell AAPL
+buy AXP
+buy BA
+buy CAT
+sell CSCO
+sell CVX
+sell DIA
+sell DIS
+sell GS
+buy HD
+buy IBM
+buy INTC
+sell JNJ
+sell JPM
+sell KO
+sell MCD
+buy MMM
+sell MRK
+sell MSFT
+sell NKE
+sell PFE
+sell PG
+sell SPY
+sell TRV
+sell UNH
+sell UTX
+sell V
+buy VIXY
+sell VZ
+sell WBA
+sell WMT
+sell XOM
+the 374 loop
+sell AAPL
+buy AXP
+buy BA
+buy CAT
+sell CSCO
+sell CVX
+sell DIA
+sell DIS
+sell GS
+buy HD
+buy IBM
+buy INTC
+sell JNJ
+sell JPM
+sell KO
+sell MCD
+buy MMM
+sell MRK
+sell MSFT
+sell NKE
+sell PFE
+sell PG
+sell SPY
+sell TRV
+sell UNH
+sell UTX
+sell V
+buy VIXY
+sell VZ
+sell WBA
+sell WMT
+sell XOM
+the 375 loop
+sell AAPL
+buy AXP
+buy BA
+buy CAT
+sell CSCO
+sell CVX
+sell DIA
+sell DIS
+sell GS
+buy HD
+buy IBM
+buy INTC
+sell JNJ
+sell JPM
+sell KO
+sell MCD
+buy MMM
+sell MRK
+sell MSFT
+sell NKE
+sell PFE
+sell PG
+sell SPY
+sell TRV
+sell UNH
+sell UTX
+sell V
+buy VIXY
+sell VZ
+sell WBA
+sell WMT
+sell XOM
+the 376 loop
+sell AAPL
+buy AXP
+buy BA
+buy CAT
+sell CSCO
+sell CVX
+sell DIA
+sell DIS
+sell GS
+buy HD
+buy IBM
+buy INTC
+sell JNJ
+sell JPM
+sell KO
+sell MCD
+buy MMM
+sell MRK
+sell MSFT
+sell NKE
+sell PFE
+sell PG
+sell SPY
+sell TRV
+sell UNH
+sell UTX
+sell V
+buy VIXY
+sell VZ
+sell WBA
+sell WMT
+sell XOM
+the 377 loop
