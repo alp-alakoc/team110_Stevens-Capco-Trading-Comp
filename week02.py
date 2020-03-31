@@ -134,13 +134,13 @@ if __name__ == "__main__":
             print(f"{symbol} and {trader.get_portfolio_item(symbol).get_long_shares()}")
             print(f"{symbol} and {trader.get_portfolio_item(symbol).get_short_shares()}")
             if diff >= 0.03**2: #Lets' decide on what this variance threshold should be....
-                if latest_interest_diff[symbol] >= 0 and trader.get_portfolio_item(symbol).get_long_shares() != 100:
+                if latest_interest_diff[symbol].values() >= 0 and trader.get_portfolio_item(symbol).get_long_shares() != 100:
                     size = int((trader.get_portfolio_item(symbol).get_short_shares() + (100 - trader.get_portfolio_item(symbol).get_long_shares())) / 100)
                     print(f"Buy {symbol}: Contract Size: {size}")
                     limit_order(trader, 'buy', symbol, size, shift.BestPrice(symbol).get_global_ask_price())
                     time.sleep(0.05)
 
-                elif latest_interest_diff[symbol] < 0 and trader.get_portfolio_item(symbol).get_short_shares() != 100:
+                elif latest_interest_diff[symbol].values() < 0 and trader.get_portfolio_item(symbol).get_short_shares() != 100:
                     size = int((trader.get_portfolio_item(symbol).get_long_shares() + (100 - trader.get_portfolio_item(symbol).get_short_shares())) / 100)
                     print(f"Buy {symbol}: Contract Size: {size}")
                     limit_order(trader, 'sell', symbol, size, shift.BestPrice(symbol).get_global_bid_price())
