@@ -32,8 +32,8 @@ def market_order(trader: shift.Trader, order_type, symbol, contract_size):
 
 def update_data(ls, prices, window=20):
 
-    p=[trader.get_last_price(sym) for sym in ls ]
-    prices.loc[trader.get_last_trade_time(),:] = p
+    p = [trader.get_last_price(sym) for sym in ls]
+    prices.loc[trader.get_last_trade_time(), :] = p
     # if len(prices)>window:
     #     prices = prices.iloc[1:,:]
     return prices
@@ -93,7 +93,7 @@ if __name__== "__main__":
                     market_order(trader, "buy", "VIXY", contract_size=5)
                     time.sleep(90)
             for item in trader.get_portfolio_items().values():
-                if item.get_shares()<0:
+                if item.get_shares() < 0:
                     print(f"buy {item.get_symbol()}")
                     market_order(trader, "buy", item.get_symbol(), contract_size=int(abs(item.get_shares())/100))
                 if item.get_shares()>0:
