@@ -62,7 +62,7 @@ def update_prices(ls, prices):
     return prices
 
 
-def update_open_interest(trader: shift.trader, ls, open_interest, order_type):
+def update_open_interest(trader: shift.Trader, ls, open_interest, order_type):
     if order_type == "ask":
         o_i = [trader.get_best_price(sym).get_ask_size() for sym in ls]
         open_interest.loc[trader.get_last_trade_time(), :] = o_i
