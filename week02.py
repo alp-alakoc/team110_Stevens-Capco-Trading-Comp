@@ -128,7 +128,7 @@ if __name__ == "__main__":
         open_ask = update_open_interest(trader, ls, open_ask, "ask")
         open_bid = update_open_interest(trader, ls, open_bid, "bid")
         open_interest_diff = interest_differential(open_ask, open_bid)
-        latest_interest_diff = open_interest_diff[-1:]
+        latest_interest_diff = open_interest_diff.iloc[-1,:]
 
 
         print(ma)
