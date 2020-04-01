@@ -62,13 +62,13 @@ def update_prices(ls, prices):
     return prices
 
 
-def update_open_interest(ls, open_interest, order_type):
+def update_open_interest(trader: shift.trader, ls, open_interest, order_type):
     if order_type == "ask":
-        o_i = [shift.BestPrice(sym).get_ask_size() for sym in ls]
+        o_i = [trader.get_best_price(sym).get_ask_size() for sym in ls]
         open_interest.loc[trader.get_last_trade_time(), :] = o_i
 
     if order_type == "bid":
-        o_i = [shift.BestPrice(sym).get_bid_size() for sym in ls]
+        o_i = [trader.get_best_price(sym).get_bid_size() for sym in ls]
         open_interest.loc[trader.get_last_trade_time(), :] = o_i
     return open_interest
 
@@ -100,9 +100,9 @@ if __name__ == "__main__":
             for i in range(60):
                 prices = update_prices(ls, prices)
                 print("Populating Price Table...{}".format(i))
-                open_ask = update_open_interest(ls, open_ask, "ask")
+                open_ask = update_open_interest(trader, ls, open_ask, "ask")
                 print("Populating Ask Size Table...{}".format(i))
-                open_bid = update_open_interest(ls, open_bid, "bid")
+                open_bid = update_open_interest(trader, ls, open_bid, "bid")
                 print("Populating Bid Size Table...{}".format(i))
                 time.sleep(10)
 
@@ -110,9 +110,9 @@ if __name__ == "__main__":
             for i in range(11):
                 prices = update_prices(ls, prices)
                 print("Populating Price Table...{}".format(i))
-                open_ask = update_open_interest(ls, open_ask, "ask")
+                open_ask = update_open_interest(trader, ls, open_ask, "ask")
                 print("Populating Ask Size Table...{}".format(i))
-                open_bid = update_open_interest(ls, open_bid, "bid")
+                open_bid = update_open_interest(trader, ls, open_bid, "bid")
                 print("Populating Bid Size Table...{}".format(i))
                 time.sleep(10)
 
@@ -122,8 +122,8 @@ if __name__ == "__main__":
         diff_var = prices.apply(ma_differntial_variance, axis=0)
         latest_var = diff_var[-1:]
 
-        open_ask = update_open_interest(ls, open_ask, "ask")
-        open_bid = update_open_interest(ls, open_bid, "bid")
+        open_ask = update_open_interest(trader, ls, open_ask, "ask")
+        open_bid = update_open_interest(trader, ls, open_bid, "bid")
         open_interest_diff = interest_differential(open_ask, open_bid)
         latest_interest_diff = open_interest_diff[-1:]
 
@@ -137,13 +137,13 @@ if __name__ == "__main__":
                 if latest_interest_diff[symbol].values() >= 0 and trader.get_portfolio_item(symbol).get_long_shares() != 100:
                     size = int((trader.get_portfolio_item(symbol).get_short_shares() + (100 - trader.get_portfolio_item(symbol).get_long_shares())) / 100)
                     print(f"Buy {symbol}: Contract Size: {size}")
-                    limit_order(trader, 'buy', symbol, size, shift.BestPrice(symbol).get_global_ask_price())
+                    limit_order(trader, 'buy', symbol, size, trader.get_best_price(symbol).get_global_ask_price())
                     time.sleep(0.05)
 
                 elif latest_interest_diff[symbol].values() < 0 and trader.get_portfolio_item(symbol).get_short_shares() != 100:
                     size = int((trader.get_portfolio_item(symbol).get_long_shares() + (100 - trader.get_portfolio_item(symbol).get_short_shares())) / 100)
                     print(f"Buy {symbol}: Contract Size: {size}")
-                    limit_order(trader, 'sell', symbol, size, shift.BestPrice(symbol).get_global_bid_price())
+                    limit_order(trader, 'sell', symbol, size, trader.get_best_price(symbol).get_global_bid_price())
                     time.sleep(0.05)
 
                 else:
@@ -163,6 +163,10 @@ if __name__ == "__main__":
 
         if prices.index[-1].time() >= datetime.time(hour=15,minute=30,second=0):
             if trade_count < 40:
+                pass
                 #We can discuss what we want to do here#...
 
             close_positions(trader)
+            trader.disconnect()
+
+        print(f"PnL: {trader.get_portfolio_summary().get_total_realized_pl()}")
