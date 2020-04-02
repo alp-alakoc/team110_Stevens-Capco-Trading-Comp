@@ -6,11 +6,11 @@ import shift
 import datetime
 
 def subscribe():
-    trader = shift.Trader("test001")
+    trader = shift.Trader("team-110")
 
     # connect and subscribe to all available order books
     try:
-        trader.connect("initiator.cfg", "password")
+        trader.connect("initiator.cfg", "t7TAFYjhbpN2qSsV")
         trader.sub_all_order_book()
     except shift.IncorrectPasswordError as e:
         print(e)
@@ -73,11 +73,6 @@ def update_open_interest(trader: shift.Trader, ls, open_interest, order_type):
     return open_interest
 
 
-def ma_differntial_variance(df, window=10):
-    ma = df.rolling(window=window).mean().fillna(0)
-    res = (ma - df).rolling(window=window).var()
-    return res
-
 
 def interest_differential(ask, bid, window=5):
     ask, bid = ask.rolling(window=window).mean(), bid.rolling(window=window).mean()
@@ -97,7 +92,7 @@ if __name__ == "__main__":
     while True:
         print(f"Iteration #{while_count} ...")
         if while_count == 0:
-            for i in range(25):
+            for i in range(60):
                 prices = update_prices(ls, prices)
                 print("Populating Price Table...{}".format(i))
                 open_ask = update_open_interest(trader, ls, open_ask, "ask")
@@ -121,35 +116,34 @@ if __name__ == "__main__":
 
         prices = update_prices(ls, prices)
         ma = (prices.rolling(window=10).mean())[10:]
-        diff_var = (prices[10:] - ma).rolling(window=10).var()
-        # diff_var = prices.apply(ma_differntial_variance, axis=0)
+        diff_var = ((prices[10:] - ma).rolling(window=10).var())[10:]
+        threshold_1 = np.array(diff_var.mean(axis=0))
         latest_var = diff_var.iloc[-1,:]
 
         open_ask = update_open_interest(trader, ls, open_ask, "ask")
         open_bid = update_open_interest(trader, ls, open_bid, "bid")
         open_interest_diff = interest_differential(open_ask, open_bid)
+        threshold_2 = np.array(open_interest_diff.mean(axis=0))
         latest_interest_diff = open_interest_diff.iloc[-1,:]
 
 
-        print(ma)
-        print(diff_var)
-        print(f"Variance of MA Differentials: {latest_var}", "\n",
-              f"Moving Volume Difference in Ask/Bid Samples: {latest_interest_diff}")
+        # print(f"Variance of MA Differentials: {latest_var}", "\n",
+        #       f"Moving Volume Difference in Ask/Bid Samples: {latest_interest_diff}")
 
+        idx = 0
         for symbol, diff in latest_var.items():
-            print(diff)
-            print(f"{symbol} - Long Shares: {trader.get_portfolio_item(symbol).get_long_shares()}")
-            print(f"{symbol} - Short Shares: {trader.get_portfolio_item(symbol).get_short_shares()}")
-            if diff >= 0.03**2: #Lets' decide on what this variance threshold should be....
-                if latest_interest_diff[symbol].values() >= 0 and trader.get_portfolio_item(symbol).get_long_shares() != 100:
-                    size = int((trader.get_portfolio_item(symbol).get_short_shares() + (100 - trader.get_portfolio_item(symbol).get_long_shares())) / 100)
-                    print(f"Buy {symbol}: Contract Size: {size}")
+            # print(f"{symbol} - Long Shares: {trader.get_portfolio_item(symbol).get_long_shares()}")
+            # print(f"{symbol} - Short Shares: {trader.get_portfolio_item(symbol).get_short_shares()}")
+            if diff >= threshold_1[idx]:
+                if latest_interest_diff[symbol] >= threshold_2[idx] and trader.get_portfolio_item(symbol).get_long_shares() != 200:
+                    size = int((trader.get_portfolio_item(symbol).get_short_shares() + (200 - trader.get_portfolio_item(symbol).get_long_shares())) / 200)
+                    # print(f"Buy {symbol}: Contract Size: {size}")
                     limit_order(trader, 'buy', symbol, size, trader.get_best_price(symbol).get_global_ask_price())
                     time.sleep(0.05)
 
-                elif latest_interest_diff[symbol].values() < 0 and trader.get_portfolio_item(symbol).get_short_shares() != 100:
-                    size = int((trader.get_portfolio_item(symbol).get_long_shares() + (100 - trader.get_portfolio_item(symbol).get_short_shares())) / 100)
-                    print(f"Buy {symbol}: Contract Size: {size}")
+                elif latest_interest_diff[symbol] < threshold_2[idx] and trader.get_portfolio_item(symbol).get_short_shares() != 200:
+                    size = int((trader.get_portfolio_item(symbol).get_long_shares() + (200 - trader.get_portfolio_item(symbol).get_short_shares())) / 200)
+                    # print(f"Buy {symbol}: Contract Size: {size}")
                     limit_order(trader, 'sell', symbol, size, trader.get_best_price(symbol).get_global_bid_price())
                     time.sleep(0.05)
 
@@ -158,6 +152,7 @@ if __name__ == "__main__":
 
             else:
                 pass
+            idx += 1
 
         # We are going to hold each position for 1.5 mins then close#
         time.sleep(90)
@@ -168,31 +163,37 @@ if __name__ == "__main__":
         trader.cancel_all_pending_orders()
         close_positions(trader)
 
-        print(f"PnL: {trader.get_portfolio_summary().get_total_realized_pl()}")
+        # print(f"PnL: {trader.get_portfolio_summary().get_total_realized_pl()}")
 
         if prices.index[-1].time() >= datetime.time(hour=15,minute=30,second=0):
             if trade_count < 40:
-                pass
-                #We can discuss what we want to do here#...
+                for _ in range(40 - trade_count):
+                    market_order(trader, 'buy', 'SPY', 1)
+                    time.sleep(5)
+                time.sleep(600)
+
+            else:
+                market_order(trader, 'buy', 'SPY', 5)
+                time.sleep(600)
 
             trader.cancel_all_pending_orders()
             close_positions(trader)
 
-            submitted_orders = pd.DataFrame(columns=['Symbol','Type','Price','Size','Executed_Size','ID','Status'])
-            for order in trader.get_submitted_orders():
-                if order.status == shift.Order.Status.FILLED:
-                    price = order.executed_price
-                else:
-                    price = order.price
-                submission = np.array([order.symbol,order.type,price,order.size,order.executed_price,order.id,order.status])
-                submitted_orders.loc[order.timestamp,:] = submission
-
-            print(f"PnL: {trader.get_portfolio_summary().get_total_realized_pl()}")
+            # submitted_orders = pd.DataFrame(columns=['Symbol','Type','Price','Size','Executed_Size','ID','Status'])
+            # for order in trader.get_submitted_orders():
+            #     if order.status == shift.Order.Status.FILLED:
+            #         price = order.executed_price
+            #     else:
+            #         price = order.price
+            #     submission = np.array([order.symbol,order.type,price,order.size,order.executed_price,order.id,order.status])
+            #     submitted_orders.loc[order.timestamp,:] = submission
+            #
+            # print(f"PnL: {trader.get_portfolio_summary().get_total_realized_pl()}")
 
             trader.disconnect()
-            prices.to_csv(r'C:\Users\alpal\Desktop\STATC\team110_Stevens-Capco-Trading-Comp\prices002.csv')
-            diff_var.to_csv(r'C:\Users\alpal\Desktop\STATC\team110_Stevens-Capco-Trading-Comp\residual_variances002.csv')
-            open_ask.to_csv(r'C:\Users\alpal\Desktop\STATC\team110_Stevens-Capco-Trading-Comp\open_ask002.csv')
-            open_bid.to_csv(r'C:\Users\alpal\Desktop\STATC\team110_Stevens-Capco-Trading-Comp\open_bid002.csv')
-            open_interest_diff.to_csv(r'C:\Users\alpal\Desktop\STATC\team110_Stevens-Capco-Trading-Comp\interest_diff002.csv')
-            submitted_orders.to_csv(r'C:\Users\alpal\Desktop\STATC\team110_Stevens-Capco-Trading-Comp\submitted_orders002.csv')
+            # prices.to_csv(r'C:\Users\alpal\Desktop\STATC\team110_Stevens-Capco-Trading-Comp\prices002.csv')
+            # diff_var.to_csv(r'C:\Users\alpal\Desktop\STATC\team110_Stevens-Capco-Trading-Comp\residual_variances002.csv')
+            # open_ask.to_csv(r'C:\Users\alpal\Desktop\STATC\team110_Stevens-Capco-Trading-Comp\open_ask002.csv')
+            # open_bid.to_csv(r'C:\Users\alpal\Desktop\STATC\team110_Stevens-Capco-Trading-Comp\open_bid002.csv')
+            # open_interest_diff.to_csv(r'C:\Users\alpal\Desktop\STATC\team110_Stevens-Capco-Trading-Comp\interest_diff002.csv')
+            # submitted_orders.to_csv(r'C:\Users\alpal\Desktop\STATC\team110_Stevens-Capco-Trading-Comp\submitted_orders002.csv')
