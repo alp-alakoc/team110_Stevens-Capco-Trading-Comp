@@ -143,7 +143,7 @@ if __name__ == "__main__":
 
                 elif latest_interest_diff[symbol] < threshold_2[idx] and trader.get_portfolio_item(symbol).get_short_shares() != 200:
                     size = int((trader.get_portfolio_item(symbol).get_long_shares() + (200 - trader.get_portfolio_item(symbol).get_short_shares())) / 200)
-                    # print(f"Buy {symbol}: Contract Size: {size}")
+                    # print(f"Sell {symbol}: Contract Size: {size}")
                     limit_order(trader, 'sell', symbol, size, trader.get_best_price(symbol).get_global_bid_price())
                     time.sleep(0.05)
 
