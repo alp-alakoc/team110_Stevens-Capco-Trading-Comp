@@ -85,7 +85,7 @@ if __name__ == "__main__":
         for i in range(80):
             prices = update_prices(ls, prices)
             print("Populating Price Table...{}".format(i))
-            time.sleep(10)
+            time.sleep(2)
 
         while_count += 1
 
@@ -109,13 +109,13 @@ if __name__ == "__main__":
 
             if var >= threshold[idx]:
                 if latest_macd[symbol] >= 0 and trader.get_portfolio_item(symbol).get_long_shares() != 200:
-                    size = int((trader.get_portfolio_item(symbol).get_short_shares() + (200 - trader.get_portfolio_item(symbol).get_long_shares())) / 200)
+                    size = int((trader.get_portfolio_item(symbol).get_short_shares() + (200 - trader.get_portfolio_item(symbol).get_long_shares())) / 100)
                     print(f"Buy {symbol}: Contract Size: {size}")
                     limit_order(trader, 'buy', symbol, size, trader.get_best_price(symbol).get_global_ask_price())
                     time.sleep(0.05)
 
                 elif latest_macd[symbol] < 0 and trader.get_portfolio_item(symbol).get_short_shares() != 200:
-                    size = int((trader.get_portfolio_item(symbol).get_long_shares() + (200 - trader.get_portfolio_item(symbol).get_short_shares())) / 200)
+                    size = int((trader.get_portfolio_item(symbol).get_long_shares() + (200 - trader.get_portfolio_item(symbol).get_short_shares())) / 100)
                     print(f"Sell {symbol}: Contract Size: {size}")
                     limit_order(trader, 'sell', symbol, size, trader.get_best_price(symbol).get_global_bid_price())
                     time.sleep(0.05)
@@ -127,8 +127,8 @@ if __name__ == "__main__":
                 pass
             idx += 1
 
-        # We are going to hold each position for 3 mins then close#
-        time.sleep(180)
+        # We are going to hold each position for 2 mins then close#
+        time.sleep(120)
         for order in trader.get_submitted_orders():
             if order.status == shift.Order.Status.FILLED:
                 trade_count += 1
