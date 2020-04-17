@@ -128,7 +128,7 @@ if __name__ == "__main__":
             idx += 1
 
         # We are going to hold each position for 2 mins then close#
-        time.sleep(180)
+        time.sleep(20)
         for order in trader.get_submitted_orders():
             if order.status == shift.Order.Status.FILLED:
                 trade_count += 1
