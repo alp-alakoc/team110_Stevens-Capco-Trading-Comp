@@ -138,13 +138,13 @@ if __name__ == "__main__":
                 if latest_macd[symbol] >= 0 and trader.get_portfolio_item(symbol).get_long_shares() != 100:
                     size = int((trader.get_portfolio_item(symbol).get_short_shares() + (100 - trader.get_portfolio_item(symbol).get_long_shares())) / 100)
                     print(f"Buy {symbol}: Contract Size: {size}")
-                    limit_order(trader, 'buy', symbol, size, trader.get_best_price(symbol).get_global_ask_price())
+                    market_order(trader, 'buy', symbol, size)
                     time.sleep(0.05)
 
                 elif latest_macd[symbol] < 0 and trader.get_portfolio_item(symbol).get_short_shares() != 100:
                     size = int((trader.get_portfolio_item(symbol).get_long_shares() + (100 - trader.get_portfolio_item(symbol).get_short_shares())) / 100)
                     print(f"Sell {symbol}: Contract Size: {size}")
-                    limit_order(trader, 'sell', symbol, size, trader.get_best_price(symbol).get_global_bid_price())
+                    market_order(trader, 'sell', symbol, size)
                     time.sleep(0.05)
 
                 else:
