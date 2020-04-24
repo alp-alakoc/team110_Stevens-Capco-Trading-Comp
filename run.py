@@ -163,6 +163,12 @@ if __name__ == "__main__":
         trader.cancel_all_pending_orders()
         close_positions(trader)
 
+        if trade_count == 40 and trader.get_portfolio_summary().get_total_realized_pl() <= -1000:
+            trader.cancel_all_pending_orders()
+            close_positions(trader)
+            trader.disconnect()
+
+
         print(f"PnL: {trader.get_portfolio_summary().get_total_realized_pl()}")
 
         if prices.index[-1].time() >= datetime.time(hour=15,minute=30,second=0):
